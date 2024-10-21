@@ -27,4 +27,8 @@ export class AppComponent {
   navigateToWeather() {
     this.router.navigate(['/weather']);
   }
+
+  navigateToPikachu(){
+    this.router.navigate(['/pikachu'])
+  }
 }
