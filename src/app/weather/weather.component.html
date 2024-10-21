@@ -1,0 +1,21 @@
+<div class="container mt-5">
+  <h1 class="mb-4">Weather Forecasts</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Temperature (C)</th>
+        <th scope="col">Temperature (F)</th>
+        <th scope="col">Summary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let forecast of weatherForecasts">
+        <td>{{ forecast.date }}</td>
+        <td>{{ forecast.temperatureC }}</td>
+        <td>{{ forecast.temperatureF }}</td>
+        <td>{{ forecast.summary }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
